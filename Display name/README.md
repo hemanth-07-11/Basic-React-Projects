@@ -1,5 +1,5 @@
 # Simple name display from the data.js file
-This is a simple page, where data from data.js is fetched and displayed - usestate project
+This is a simple page, where data from data.js is fetched and displayed - usestate was practiced well
 
 # Getting Started with Create React App
 
