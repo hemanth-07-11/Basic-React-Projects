@@ -2,4 +2,4 @@
 
 A Simple react challenge to increment as a button is clicked.
 
-### Learnt props well amd practiced.
+### Learnt props well and practiced.
