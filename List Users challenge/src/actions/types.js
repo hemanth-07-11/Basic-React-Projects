@@ -1,0 +1,2 @@
+export const SET_USERS = 'SET_USERS'
+export const TOGGLE_INTEREST = 'TOGGLE_INTEREST'
