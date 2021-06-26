@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+@import '~material-design-icons/iconfont/material-icons.css';
+
+$error-color: #D32F2F;
+$hover-color: #333333;
+$focus-color: #2962FF;
+$default-color: #828282;
+
+.input{
+    width: 200px;
+    height: 56px;
+    border: 1px solid $default-color;
+    border-radius: 8px;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+    input{
+        position: relative;
+        top: -18px;
+        margin: 0;
+        padding: 0 15px;
+        width: 80%;
+        height: 100%;
+        border-radius: 8px;
+        border: none;
+        background: rgba(0,0,0,0);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $hover-color;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    label{
+        display: block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        top: -18px;
+        color: $default-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .helperText{
+        position: relative;
+        top: -15px;
+        color: $default-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    &--hover{
+        pointer-events: none;
+        border: 1px solid $hover-color;
+        label{
+            color: $hover-color;
+        }
+    }
+
+    &--focus{
+        pointer-events: none;
+        border: 1px solid $focus-color;
+        label{
+            color: $focus-color;
+        }
+    }
+
+    &:hover{
+        border: 1px solid $hover-color;
+        label, .helperText, .startIcon, .endIcon{
+            color: $hover-color;
+        }
+    }
+
+    &:focus-within{
+        border: 1px solid blue;
+        label, .helperText, .startIcon, .endIcon{
+            color: $focus-color;
+        }
+    }
+
+
+    &--error{
+        border: 1px solid $error-color;
+        label, .helperText{
+            color: $error-color;
+        }
+
+        &:focus-within{
+            border: 1px solid $error-color;
+            label, .helperText{
+                color: $error-color;
+            }
+        }
+        &.input--hover{
+            border: 1px solid $hover-color;
+            label, .helperText{
+                color: black;
+            }
+        }
+        .input--hover + label{
+            color: black;
+        }
+    }
+
+    &--disabled{
+        pointer-events: none;
+        background: #F2F2F2;
+        border: 1px solid #E0E0E0;
+        &:hover{
+            border: 1px solid #E0E0E0;
+        }
+    }
+
+    &--start-icon, &--end-icon{
+        .startIcon, .endIcon{
+            display: inline-block;
+            position: relative;
+            top: -12px;
+            color: $default-color;
+        }
+        input{
+            display: inline-block;
+            width: 65%;
+        }
+    }
+
+    &--sm{height: 40px;}
+    &--md{height: 56px;}
+    &--lg{height: 70px;}
+
+    &--fullWidth{
+        width: 100%;
+    }
+
+    textarea{
+        position: relative;
+        top: -18px;
+        margin: 0;
+        padding: 0 15px;
+        width: 80%;
+        height: 100%;
+        border-radius: 8px;
+        border: none;
+        background: rgba(0,0,0,0);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: $hover-color;
+        resize: none;
+    }
+    &.input--multiline{
+        padding-top: 1px; 
+        height: 90%;
+    }
+}
+
+::-moz-focus-inner{
+    border: none;
+}
+:focus{
+    outline: none;
+}
+
+.material-icons{
+    position: relative;
+    top: 3px;
+    font-size: 1.3em;
+    margin: 0 8px;
+}

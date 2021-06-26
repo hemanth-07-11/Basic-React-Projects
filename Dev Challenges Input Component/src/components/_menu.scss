@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap');
+
+
+
+.menu{
+    position: fixed;
+    width: 15%;
+    min-width: 150px;
+    height: 100%;
+    background: #FAFBFD;
+    z-index: 1;
+    @media(max-width: 800px){
+        display: none;
+    }
+    &__title{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 19px;
+        margin: 40px 0 0 0;
+        &--dev{
+            color: #F7542E;
+        }
+    }
+    &__list{
+        width: 85px;
+        margin: 0;
+        padding: 80px 0;
+        text-align: left;
+        position: relative;
+        left: 70px;
+    }
+    &__link{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #9E9E9E;
+        list-style: none;
+        padding: 20px 0;
+        &--active{
+            font-family: 'Noto Sans JP', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            list-style: none;
+            font-weight: bold;
+            color: #090F31;
+            padding: 25px 0;
+        }
+    }
+}

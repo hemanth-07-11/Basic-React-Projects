@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap');
+
+
+.inputWrapper{
+    margin: 25px 80px 25px 0;
+    &__description{
+        font-family: 'Ubuntu Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        color: #333333;
+        margin: 0 0 25px 0;
+        &--pseudoclass{
+            font-family: 'Ubuntu Mono', monospace;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            color: #828282;
+            margin: 0 0 25px 0;
+        }
+    }
+
+    &--full{
+        width: 95%;
+    }
+}
