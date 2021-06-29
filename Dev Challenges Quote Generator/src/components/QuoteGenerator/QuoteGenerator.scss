@@ -1,0 +1,25 @@
+.random{
+    &__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 20px auto;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: #4F4F4F;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+    &:hover{
+        padding: 9px 19px;
+        border: 1px solid #4f4f4f;
+    }
+}
+&__image{
+    width: 20px;
+    margin-left: 7px;
+}
+}
