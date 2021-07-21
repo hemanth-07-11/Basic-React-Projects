@@ -5,7 +5,7 @@ All information available using the API is fetched and displayed for the request
 
 ## Screenshot
 
-
+ ![screenshot](https://raw.githubusercontent.com/hemanth-07-11/Basic-React-Projects/main/Crypto%20Coin%20Information%20API/Screenshot.jpeg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
